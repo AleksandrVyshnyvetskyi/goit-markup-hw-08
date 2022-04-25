@@ -1,0 +1,78 @@
+// Переменные
+
+@import "./varibals/_varibals.scss";
+
+// Сброс стилей
+
+@import "./utils/reset";
+
+// visually-hidden
+
+@import "./utils/visually-hidden";
+
+// Container
+
+@import "./components/container";
+
+// Базовые стили
+
+@import "./components/_base";
+
+// Кнопки
+
+@import "./components/btn";
+
+// Header
+
+@import "./components/header";
+
+// Hero
+
+@import "./components/hero";
+
+// Backdrop
+
+@import "./components/backdrop";
+
+// Особенности
+
+@import "./components/feature";
+
+// Наши работы
+
+@import "./components/wokrs-section";
+
+// Наша команда
+
+@import "./components/_team";
+
+// Наши клиенты
+
+@import "./components/clients";
+
+
+
+// Портфолио
+
+
+// Категирии работ
+
+@import "./components/work-kat";
+
+// Projects
+
+@import "./components/projects";
+
+
+
+
+// Footer
+
+@import "./components/footer";
+
+
+
+// Мобильное окно
+
+@import "./components/mobile-menu";
+@import "./components/mobile-menu-btn.scss";

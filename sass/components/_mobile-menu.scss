@@ -1,0 +1,111 @@
+// Мобильное окно
+.mobile-menu {
+    width: 100vw;
+    height: 100vh;
+    padding: 48px 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background-color: var(--main-bgd-color);
+
+    transform: translateX(100%);
+    visibility: hidden;
+    pointer-events: none;
+
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
+    
+    &.is-open {
+        transform: translateX(0);
+        visibility: visible;
+        pointer-events: initial;
+    }
+}
+
+
+.mobile-nav {
+    margin-bottom: 302px;
+
+    &__item {
+        margin-bottom: 32px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__link {
+        font-family: Roboto,
+        sans-serif;
+        font-weight: 500;
+        font-size: 40px; 
+        line-height: 1.17;
+        color: var(--main-text-color);
+        transition-property: color,
+        transform;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-delay: 0;
+
+        &:hover,&:focus {
+            color: var(--theme-accent);
+        }
+    }
+    
+}
+
+.mobile-contacts {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 64px;
+
+
+    &__tel {
+        font-family: Roboto,
+        sans-serif;
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 1.17;
+        color: var(--theme-accent);
+        margin-bottom: 32px;
+    }
+
+    &__mail {
+        font-family: Roboto,
+        sans-serif;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 1.17;
+        color: var(--text-color);
+    }
+}
+
+.mobile-social {
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        padding: 0 10px;
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+        &:first-child {
+            padding-left: 0;
+        }
+        &:last-child {
+            border: 0;
+            padding-right: 0;
+        }
+    }
+
+    &__link {
+        font-family: Roboto,
+        sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.17;
+        color: var(--theme-accent);
+    }
+
+}
