@@ -448,6 +448,8 @@ body {
 .contact__link {
   display: flex;
   align-items: center;
+  position: relative;
+  padding-bottom: 5px;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.02em;
@@ -464,6 +466,24 @@ body {
 
 .contact__link:hover, .contact__link:focus {
   color: var(--aсcent-color);
+}
+
+.contact__link::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: var(--aсcent-color);
+  border-radius: 4px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .25s ease;
+}
+
+.contact__link:hover::after {
+  transform: scaleX(1);
 }
 
 .contact__icon {
@@ -1105,10 +1125,30 @@ body {
 }
 
 .footer__link {
+  position: relative;
+  padding-bottom: 3px;
   color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+}
+
+.footer__link::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: var(--aсcent-color);
+  border-radius: 4px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .25s ease;
+}
+
+.footer__link:hover::after {
+  transform: scaleX(1);
 }
 
 .footer__logo {
