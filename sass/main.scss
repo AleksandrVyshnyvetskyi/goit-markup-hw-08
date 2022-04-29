@@ -1,78 +1,34 @@
-// Переменные
+//variablel
+@import './variables/variables';
 
-@import "./varibals/_varibals.scss";
+//utils
+@import './utils/placeholders';
+@import './utils/mixins';
+@import './utils/visually-hidden';
 
-// Сброс стилей
+// base styles
+@import './base/base';
 
-@import "./utils/reset";
+//componets
 
-// visually-hidden
+@import './components/button';
+@import './components/mobile-btn';
 
-@import "./utils/visually-hidden";
-
-// Container
-
-@import "./components/container";
-
-// Базовые стили
-
-@import "./components/_base";
-
-// Кнопки
-
-@import "./components/btn";
-
-// Header
-
-@import "./components/header";
-
-// Hero
-
-@import "./components/hero";
-
-// Backdrop
-
-@import "./components/backdrop";
-
-// Особенности
-
-@import "./components/feature";
-
-// Наши работы
-
-@import "./components/wokrs-section";
-
-// Наша команда
-
-@import "./components/_team";
-
-// Наши клиенты
-
-@import "./components/clients";
-
-
-
-// Портфолио
-
-
-// Категирии работ
-
-@import "./components/work-kat";
-
-// Projects
-
-@import "./components/projects";
-
-
-
-
-// Footer
-
-@import "./components/footer";
-
-
-
-// Мобильное окно
-
-@import "./components/mobile-menu";
-@import "./components/mobile-menu-btn.scss";
+@import './components/conteiner';
+@import './components/logo';
+@import './components/header';
+@import './components/mobile-menu/element';
+@import './components/nav';
+@import './components/contact';
+@import './components/hero';
+@import './components/feature';
+@import './components/about';
+@import './components/team';
+@import './components/socials-list';
+@import './components/clients';
+@import './components/examples/section';
+@import './components/footer';
+@import './components/form';
+@import './components/backdrop';
+@import './components/modal';
+@import './components/form-submit';

@@ -1,0 +1,29 @@
+:root {
+  /* Шрифты */
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+
+  --main-txt-color: #757575;
+  /* Цвета текста */
+  --secondary-txt-color: #000000;
+  --title-color: #212121;
+
+  /*Цвет иконок */
+  --icon-color: #afb1b8;
+
+  /* Цвета бэкграундов */
+  --hero-bg-color: #c4c4c4;
+  --section-bg-color: #f5f4fa;
+  --main-bg-color: #ffffff;
+  --footer-bg-color: #2f303a;
+  /* Акцент */
+  --aсcent-color: #2196f3;
+  --aсcent-color-hover: #188ce8;
+  /* Цвет линии хедера */
+  --line-header-color: #ececec;
+  --line-wrapper-color: #eeeeee;
+  /* Градиент */
+  --gradient-color: rgba(47, 48, 58, 0.4);
+  /* Анимация */
+  --animation-time: 250ms;
+}

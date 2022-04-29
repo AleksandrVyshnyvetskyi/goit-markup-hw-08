@@ -1,56 +1,58 @@
-.client-section {
-    display: flex;
-    justify-content: center;
+.clients {
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-    @media screen and (max-width: 480px) {
-        flex-wrap: wrap;
+  text-align: center;
+  @media screen and(min-width:1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -15px;
+  }
+  &__item {
+    width: calc((100% / 2 - 2 * 15px));
+    margin: 15px;
+    @media screen and (min-width: 768px) {
+      width: calc((100% / 3 - 2 * 15px));
     }
-}
+    @media screen and (min-width: 1200px) {
+      width: calc((100% / 6 - 2 * 15px));
+    }
+  }
 
-.client {
-    border: 1px solid #afb1b8;
-    border-radius: 5px;
-    width: 170px;
+  &__link {
+    @extend %flex;
     height: 92px;
-    display: flex;
-    justify-content: center;
-    color: var(--svg-color);
+    border: 1px solid var(--icon-color);
+    border-radius: 4px;
 
-    transition-property: color, border, transform;
+    transition-property: color,
+    border,
+    transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-delay: 0;
 
-    &:hover, &:focus {
-        color: var(--theme-accent);
-        border: 1px solid var(--theme-accent);
-        transform: scale(1.3);
-    }
-    
-    @media screen and (max-width: 480px) {
-        width: 210px;
+    &:hover,
+    &:focus {
+      border-color: var(--aсcent-color);
+      transform: scale(1.3);
     }
 
-}
-
-.client-box {
-    margin-right: 30px;
-
-    &:last-child {
-        margin-right: 0px;
+    &:hover .clients__icon,
+    &:focus .clients__icon {
+      fill: var(--aсcent-color);
     }
+  }
 
-    @media screen and (max-width: 480px) {
-        margin-right: 0;
-        &:nth-child(2n) {
-            margin-left: 30px;
-            margin-bottom: 30px;
-            }
-    }
-}
+  &__icon {
+    fill: var(--icon-color);
 
-
-.icon-svgclient {
-    width: 106px;
-    fill: currentColor;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }

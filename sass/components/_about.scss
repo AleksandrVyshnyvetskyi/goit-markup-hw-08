@@ -1,0 +1,40 @@
+/* Секция Чем мы занимаемся */
+.about {
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+
+  padding-bottom: 94px;
+  text-align: center;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__thumb {
+    position: relative;
+  }
+
+  &__description {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 27px 0;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--main-bg-color);
+    background-color: hsla(235, 10%, 21%, 0.8);
+  }
+}

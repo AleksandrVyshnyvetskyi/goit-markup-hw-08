@@ -1,0 +1,55 @@
+.mobile-btn {
+  position: relative;
+  z-index: 99;
+
+  display: flex;
+  padding: 0;
+  background-color: transparent;
+  border: transparent;
+  outline: transparent;
+  cursor: pointer;
+
+  // transform: translateX(100);
+  // visibility: hidden;
+  // pointer-events: none;
+
+  // transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  // &.is-active {
+  //   transform: translateX(0);
+  //   visibility: visible;
+  //   pointer-events: initial;
+  // }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  &__open {
+    opacity: 1;
+
+    fill: var(--secondary-txt-color);
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__close {
+    opacity: 0;
+
+    fill: var(--secondary-txt-color);
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &:hover &__open,
+  &:focus &__close {
+    fill: var(--aсcent-color);
+  }
+
+  &.is-active &__open {
+    opacity: 0;
+  }
+
+  &.is-active &__close {
+    opacity: 1;
+  }
+}

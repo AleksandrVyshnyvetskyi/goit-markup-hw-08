@@ -1,97 +1,93 @@
-.works {
-    text-align: center;
-    display: flex;
-}
-
-.feature-box {
-    margin-right: 30px;
-    margin-bottom: 0px;
-    width: 270px;
-
-    &:last-child {
-        margin-right: 0;
-    }
-
-    @media screen and (max-width: 480px) {
-        width: 450px;
-    }
-
-}
+/* Секция особенности */
 
 .feature {
-    display: flex;
-    justify-content: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-    @media screen and (max-width: 480px) {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  &__list {
+    @media screen and (max-width: 767.5px) {
+      max-width: 450px;
+      margin-left: auto;
+      margin-right: auto;
     }
-}
-
-.feature-item {
-    width: 270px;
-    height: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 3px;
-    margin-bottom: 30px;
-    background-color: var(--bgd-button-color);
-
-    @media screen and (max-width: 480px) {
-        width: 450px;
-        height: 120px;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
     }
-}
+    @media screen and (min-width: 768px) and (max-width: 1199.5px) {
+      // margin-right: -30px;
+      // margin-bottom: -30px;
+    }
+  }
 
-.feature-svg {
-    width: 70px;
-    height: 70px;
-}
-
-.feature-tittle {
+  &__subtitle {
     margin-bottom: 10px;
+
+    color: var(--title-color);
+    font-weight: 700;
     font-size: 14px;
-    line-height: 1.14;
+    line-height: 16px;
     text-transform: uppercase;
 
-    @media screen and (max-width: 480px) {
-        display: flex;
-        justify-content: center;
+    @media screen and(max-width:767.5px) {
+      text-align: center;
     }
-}
+  }
 
-.feature-text {
-    color: var(--text-color);
-    line-height: 1.71;
-}
-
-.works-item {
-    margin-right: 30px;
-    position: relative;
-    &:last-child {
-        margin-right: 0;
+  &__item {
+    @media screen and (max-width: 767.5px) {
+      margin-bottom: 30px;
     }
-}
 
-.works-text-box {
-    background-color: rgba(47, 48, 58, 0.8);
-    width: 370px;
-    height: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    bottom: 0;
-}
+    @media screen and (min-width: 768px) and (max-width: 1199.5px) {
+      width: 354px;
 
-.works-text {
-    font-family: Roboto, sans-serif;
-    font-size: 14px;
-    line-height: 1.14;
-    text-align: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--main-bgd-color);
+      // margin-right: 30px;
+      // margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
+  }
+
+  &__antenna::before,
+  &__clock::before,
+  &__diagram::before,
+  &__astronaut::before {
+    content: '';
+    display: block;
+
+    width: 100%;
+    height: 120px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+
+    background-color: var(--section-bg-color);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70px;
+  }
+
+  &__antenna::before {
+    background-image: url(../images/svg/antenna.svg);
+  }
+
+  &__clock::before {
+    background-image: url(../images/svg/clock.svg);
+  }
+
+  &__diagram::before {
+    background-image: url(../images/svg/diagram.svg);
+  }
+
+  &__astronaut::before {
+    background-image: url(../images/svg/astronaut.svg);
+  }
 }

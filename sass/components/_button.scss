@@ -1,0 +1,29 @@
+.button {
+  padding: 10px 32px;
+
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+
+  color: var(--main-bg-color);
+  background-color: var(--aсcent-color);
+
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition: transform 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
+
+  &:hover,
+  &:focus {
+    background-color: var(--aсcent-color-hover);
+    transform: scale(1.1);
+  }
+}

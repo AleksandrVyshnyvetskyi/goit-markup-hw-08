@@ -4,9 +4,10 @@
     display: block;
     width: 40px;
     height: 40px;
+    border: none;
     margin-left: auto;
-    background-color: var(--main-bgd-color);
     border: transparent;
+    background-color: transparent;
     outline: transparent;
     transition-property: color,
         transform;
@@ -15,7 +16,7 @@
     transition-delay: 0;
     cursor: pointer;
 
-    @media screen and (min-width: 768px) {
+    @include mq(tablet) {
         display: none;
     }
 
@@ -33,6 +34,9 @@
             width: 19px;
             height: 19px;
             fill: currentColor;
+            position: fixed;
+            top: 21px;
+            right: 43px;
         }
     }
 

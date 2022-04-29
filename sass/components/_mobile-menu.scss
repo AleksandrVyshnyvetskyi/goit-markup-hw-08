@@ -37,6 +37,7 @@
     }
 
     &__link {
+
         font-family: Roboto,
         sans-serif;
         font-weight: 500;
@@ -66,7 +67,7 @@
         font-family: Roboto,
         sans-serif;
         font-weight: 500;
-        font-size: 34px;
+        font-size: 26px;
         line-height: 1.17;
         color: var(--theme-accent);
         margin-bottom: 32px;
@@ -85,11 +86,13 @@
 .mobile-social {
     &__list {
         display: flex;
+        flex-wrap: wrap;
     }
 
     &__item {
         padding: 0 10px;
         border-right: 1px solid rgba(33, 33, 33, 0.2);
+        margin-bottom: 10px;
         &:first-child {
             padding-left: 0;
         }

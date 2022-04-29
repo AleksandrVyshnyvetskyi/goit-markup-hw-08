@@ -36,6 +36,9 @@
   width: 19px;
   height: 19px;
   fill: currentColor;
+  position: fixed;
+  top: 21px;
+  right: 43px;
 }
 
 .menu-btn:hover, .menu-btn:focus {
