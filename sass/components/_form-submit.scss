@@ -66,12 +66,12 @@
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  &__input:focus,
-  &__textarea:focus,
-  &__input:focus + &__name-icon {
+  &__input:focus, &__input:hover,
+  &__textarea:focus, &__textarea:hover,
+  &__input:focus, &__input:hover + &__name-icon {
     border-color: var(--aсcent-color);
-
     fill: var(--aсcent-color);
+    color: var(--aсcent-color);
   }
 
   &__textarea {

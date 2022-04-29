@@ -1366,10 +1366,10 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-submit__input:focus, .form-submit__textarea:focus,
-.form-submit__input:focus + .form-submit__name-icon {
+.form-submit__input:focus, .form-submit__input:hover, .form-submit__textarea:focus, .form-submit__textarea:hover, .form-submit__input:focus, .form-submit__input:hover + .form-submit__name-icon {
   border-color: var(--aсcent-color);
   fill: var(--aсcent-color);
+  color: var(--aсcent-color);
 }
 
 .form-submit__textarea {
