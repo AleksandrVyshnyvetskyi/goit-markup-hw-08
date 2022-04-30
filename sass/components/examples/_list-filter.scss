@@ -1,6 +1,5 @@
 .list-filter {
   display: flex;
-  justify-content: center;
 
   @media screen and (max-width: 767.5px) {
     flex-wrap: wrap;
@@ -10,7 +9,7 @@
   }
   @media screen and (min-width: 768px) {
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
   &__item {
     @media screen and (max-width: 767.5px) {
