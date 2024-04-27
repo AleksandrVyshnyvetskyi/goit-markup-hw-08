@@ -1,936 +1,1047 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/main.min.css" />
-    <title>WebStudio</title>
-  </head>
-  <body>
-    <!-- Шапка сайта -->
-    <header class="header">
-      <div class="container header__container">
-        <a class="logo link-no-decor" href="./index.html"
-          ><span class="logo__aсcent">Web</span>Studio</a
-        >
-        <!-- Главная навигация -->
-        <nav class="nav">
-          <ul class="list-no-marker nav__list">
-            <li class="nav__item">
-              <a
-                class="link-no-decor nav__link nav__link--animation"
-                href="./index.html"
-                >Студия</a
-              >
-            </li>
-            <li class="nav__item">
-              <a
-                class="link-no-decor nav__link nav__link--current"
-                href="./portfolio.html"
-                >Портфолио</a
-              >
-            </li>
-            <li class="nav__item">
-              <a class="link-no-decor nav__link nav__link--animation" href=""
-                >Контакты</a
-              >
-            </li>
-          </ul>
-        </nav>
-        <!-- Список контактов -->
-        <ul class="list-no-marker contact">
-          <li class="contact__item">
-            <a
-              class="link-no-decor contact__link"
-              href="mailto:info@devstudio.com"
-            >
-              <svg class="contact__icon" width="16px" height="12px">
-                <use href="./images/svg/sprite.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="contact__item">
-            <a class="link-no-decor contact__link" href="tel:+380961111111">
-              <svg class="contact__icon" width="10px" height="16px">
-                <use href="./images/svg/sprite.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-        <!-- Кнопка мобильноого меню -->
-        <button
-          class="mobile-btn"
-          type="button"
-          aria-label="Кнопка мобильного меню"
-          aria-expanded="false"
-          data-menu-button
-        >
-          <svg class="mobile-btn__icon" width="40" height="40">
-            <use
-              class="mobile-btn__open"
-              href="./images/svg/sprite.svg#icon-menu-open"
-            ></use>
-            <use
-              class="mobile-btn__close"
-              href="./images/svg/sprite.svg#icon-menu-close"
-            ></use>
-          </svg>
-        </button>
-      </div>
-    </header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./css/main.min.css" />
+        <title>WebStudio</title>
+    </head>
+    <body>
+        <!-- Шапка сайта -->
+        <header class="header">
+            <div class="container header__container">
+                <a class="logo link-no-decor" href="./index.html"
+                    ><span class="logo__aсcent">Web</span>Studio</a
+                >
+                <!-- Главная навигация -->
+                <nav class="nav">
+                    <ul class="list-no-marker nav__list">
+                        <li class="nav__item">
+                            <a
+                                class="link-no-decor nav__link nav__link--animation"
+                                href="./index.html"
+                                >Студия</a
+                            >
+                        </li>
+                        <li class="nav__item">
+                            <a
+                                class="link-no-decor nav__link nav__link--current"
+                                href="./portfolio.html"
+                                >Портфолио</a
+                            >
+                        </li>
+                        <li class="nav__item">
+                            <a
+                                class="link-no-decor nav__link nav__link--animation"
+                                href=""
+                                >Контакты</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Список контактов -->
+                <ul class="list-no-marker contact">
+                    <li class="contact__item">
+                        <a
+                            class="link-no-decor contact__link"
+                            href="mailto:info@devstudio.com"
+                        >
+                            <svg
+                                class="contact__icon"
+                                width="16px"
+                                height="12px"
+                            >
+                                <use
+                                    href="./images/svg/sprite.svg#icon-envelope"
+                                ></use>
+                            </svg>
+                            info@devstudio.com</a
+                        >
+                    </li>
+                    <li class="contact__item">
+                        <a
+                            class="link-no-decor contact__link"
+                            href="tel:+380961111111"
+                        >
+                            <svg
+                                class="contact__icon"
+                                width="10px"
+                                height="16px"
+                            >
+                                <use
+                                    href="./images/svg/sprite.svg#icon-smartphone"
+                                ></use>
+                            </svg>
+                            +38 096 111 11 11</a
+                        >
+                    </li>
+                </ul>
+                <!-- Кнопка мобильноого меню -->
+                <button
+                    class="mobile-btn"
+                    type="button"
+                    aria-label="Кнопка мобильного меню"
+                    aria-expanded="false"
+                    data-menu-button
+                >
+                    <svg class="mobile-btn__icon" width="40" height="40">
+                        <use
+                            class="mobile-btn__open"
+                            href="./images/svg/sprite.svg#icon-menu-open"
+                        ></use>
+                        <use
+                            class="mobile-btn__close"
+                            href="./images/svg/sprite.svg#icon-menu-close"
+                        ></use>
+                    </svg>
+                </button>
+            </div>
+        </header>
 
-    <!-- Основной контент Портфолио -->
-    <main>
-      <!-- Примеры работ -->
-      <section class="examples">
-        <div class="container examples__container">
-          <h2 class="title" hidden>Портфолио</h2>
+        <!-- Основной контент Портфолио -->
+        <main>
+            <!-- Примеры работ -->
+            <section class="examples">
+                <div class="container examples__container">
+                    <h2 class="title" hidden>Портфолио</h2>
 
-          <!-- Фильтр примеров работ -->
-          <ul class="list-no-marker list-filter">
-            <li class="list-filter__item">
-              <button class="list-filter__button" type="button">Все</button>
-            </li>
-            <li class="list-filter__item">
-              <button class="list-filter__button" type="button">
-                Веб-сайты
-              </button>
-            </li>
-            <li class="list-filter__item">
-              <button class="list-filter__button" type="button">
-                Приложения
-              </button>
-            </li>
-            <li class="list-filter__item">
-              <button class="list-filter__button" type="button">Дизайн</button>
-            </li>
-            <li class="list-filter__item">
-              <button class="list-filter__button" type="button">
-                Маркетинг
-              </button>
-            </li>
-          </ul>
-          <!-- Список примеров работ -->
-          <ul class="list-no-marker cards-list">
-            <li class="cards-list__item">
-              <a class="link-no-decor cards-list__link" href="">
-                <div class="cards-list__thumb">
-                  <picture>
-                    <source
-                      srcset="
-                        ./images/portfolio/tehnokryak_lg.webp    1x,
-                        ./images/portfolio/tehnokryak_lg@2x.webp 2x
-                      "
-                      media="(min-width: 1200px)"
-                      type="image/webp"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/tehnokryak_lg.jpg    1x,
-                        ./images/portfolio/tehnokryak_lg@2x.jpg 2x
-                      "
-                      media="(min-width: 1200px)"
-                      type="image/jpeg"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/tehnokryak_md.webp    1x,
-                        ./images/portfolio/tehnokryak_md@2x.webp 2x
-                      "
-                      media="(min-width: 768px)"
-                      type="image/webp"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/tehnokryak_md.jpg    1x,
-                        ./images/portfolio/tehnokryak_md@2x.jpg 2x
-                      "
-                      media="(min-width: 768px)"
-                      type="image/jpeg"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/tehnokryak_sm.webp    1x,
-                        ./images/portfolio/tehnokryak_sm@2x.webp 2x
-                      "
-                      media="(max-width: 767px)"
-                      type="image/webp"
-                    />
-                    <source
-                      srcset="./images/portfolio/tehnokryak_sm@2x.jpg 2x"
-                      media="(max-width: 767px)"
-                      type="image/jpeg"
-                    />
-                    <img
-                      src="./images/portfolio/tehnokryak_sm.jpg"
-                      alt="Пример работы Технокряк"
-                      width="370"
-                      height="294"
-                    />
-                  </picture>
-                  <p class="cards-list__meta">
-                    Ресурс предлагает комплексные предложения с разным уровнем
-                    функционала и сервисов. Все это позволит посетителю получить
-                    исчерпывающие сведения о компании или частном лице.
-                  </p>
-                </div>
-                <div class="cards-list__wrapper">
-                  <h3 class="cards-list__subtitle">Технокряк</h3>
-                  <p class="cards-list__descriptions">Веб-сайт</p>
-                </div>
-              </a>
-            </li>
-            <li class="cards-list__item">
-              <a class="link-no-decor cards-list__link" href="">
-                <div class="cards-list__thumb">
-                  <picture>
-                    <source
-                      srcset="
-                        ./images/portfolio/new_orlean_lg.webp    1x,
-                        ./images/portfolio/new_orlean_lg@2x.webp 2x
-                      "
-                      media="(min-width: 1200px)"
-                      type="image/webp"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/new_orlean_lg.jpg    1x,
-                        ./images/portfolio/new_orlean_lg@2x.jpg 2x
-                      "
-                      media="(min-width: 1200px)"
-                      type="image/jpeg"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/new_orlean_md.webp    1x,
-                        ./images/portfolio/new_orlean_md@2x.webp 2x
-                      "
-                      media="(min-width: 768px)"
-                      type="image/webp"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/new_orlean_md.jpg    1x,
-                        ./images/portfolio/new_orlean_md@2x.jpg 2x
-                      "
-                      media="(min-width: 768px)"
-                      type="image/jpeg"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/new_orlean_sm.webp    1x,
-                        ./images/portfolio/new_orlean_sm@2x.webp 2x
-                      "
-                      media="(max-width: 767px)"
-                      type="image/webp"
-                    />
-                    <source
-                      srcset="./images/portfolio/new_orlean_sm@2x.jpg 2x"
-                      media="(max-width: 767px)"
-                      type="image/jpeg"
-                    />
-                    <img
-                      src="./images/portfolio/new_orlean_sm.jpg"
-                      alt="Пример работы постер New Orlean vs Golden Star"
-                      width="370"
-                      height="294"
-                    />
-                  </picture>
-                  <p class="cards-list__meta">
-                    Тут какой-то текст про данную работу &#128513;
-                  </p>
-                </div>
-                <div class="cards-list__wrapper">
-                  <h3 class="cards-list__subtitle">
-                    Постер New Orlean vs Golden Star
-                  </h3>
-                  <p class="cards-list__descriptions">Дизайн</p>
-                </div>
-              </a>
-            </li>
-            <li class="cards-list__item">
-              <a class="link-no-decor cards-list__link" href="">
-                <div class="cards-list__thumb">
-                  <picture>
-                    <source
-                      srcset="
-                        ./images/portfolio/seafood_lg.webp    1x,
-                        ./images/portfolio/seafood_lg@2x.webp 2x
-                      "
-                      media="(min-width: 1200px)"
-                      type="image/webp"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/seafood_lg.jpg    1x,
-                        ./images/portfolio/seafood_lg@2x.jpg 2x
-                      "
-                      media="(min-width: 1200px)"
-                      type="image/jpeg"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/seafood_md.webp    1x,
-                        ./images/portfolio/seafood_md@2x.webp 2x
-                      "
-                      media="(min-width: 768px)"
-                      type="image/webp"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/seafood_md.jpg    1x,
-                        ./images/portfolio/seafood_md@2x.jpg 2x
-                      "
-                      media="(min-width: 768px)"
-                      type="image/jpeg"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/seafood_sm.webp    1x,
-                        ./images/portfolio/seafood_sm@2x.webp 2x
-                      "
-                      media="(max-width: 767px)"
-                      type="image/webp"
-                    />
-                    <source
-                      srcset="./images/portfolio/seafood_sm@2x.jpg 2x"
-                      media="(max-width: 767px)"
-                      type="image/jpeg"
-                    />
-                    <img
-                      src="./images/portfolio/seafood_sm.jpg"
-                      alt="Пример работы ресторан Seafood"
-                      width="370"
-                      height="294"
-                    />
-                  </picture>
-                  <p class="cards-list__meta">
-                    Тут какой-то текст про данную работу &#128513;
-                  </p>
-                </div>
-                <div class="cards-list__wrapper">
-                  <h3 class="cards-list__subtitle">
-                    Ресторан <span lang="en">Seafood</span>
-                  </h3>
-                  <p class="cards-list__descriptions">Приложение</p>
-                </div>
-              </a>
-            </li>
-            <li class="cards-list__item">
-              <a class="link-no-decor cards-list__link" href="">
-                <div class="cards-list__thumb">
-                  <picture>
-                    <source
-                      srcset="
-                        ./images/portfolio/project_prime_lg.webp    1x,
-                        ./images/portfolio/project_prime_lg@2x.webp 2x
-                      "
-                      media="(min-width: 1200px)"
-                      type="image/webp"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/project_prime_lg.jpg    1x,
-                        ./images/portfolio/project_prime_lg@2x.jpg 2x
-                      "
-                      media="(min-width: 1200px)"
-                      type="image/jpeg"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/project_prime_md.webp    1x,
-                        ./images/portfolio/project_prime_md@2x.webp 2x
-                      "
-                      media="(min-width: 768px)"
-                      type="image/webp"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/project_prime_md.jpg    1x,
-                        ./images/portfolio/project_prime_md@2x.jpg 2x
-                      "
-                      media="(min-width: 768px)"
-                      type="image/jpeg"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/project_prime_sm.webp    1x,
-                        ./images/portfolio/project_prime_sm@2x.webp 2x
-                      "
-                      media="(max-width: 767px)"
-                      type="image/webp"
-                    />
-                    <source
-                      srcset="./images/portfolio/project_prime_sm@2x.jpg 2x"
-                      media="(max-width: 767px)"
-                      type="image/jpeg"
-                    />
-                    <img
-                      src="./images/portfolio/project_prime_sm.jpg"
-                      alt="Пример работы проект Prime"
-                      width="370"
-                      height="294"
-                    />
-                  </picture>
-                  <p class="cards-list__meta">
-                    Тут какой-то текст про данную работу &#128513;
-                  </p>
-                </div>
-                <div class="cards-list__wrapper">
-                  <h3 class="cards-list__subtitle">
-                    Проект <span lang="en">Prime</span>
-                  </h3>
-                  <p class="cards-list__descriptions">Маркетинг</p>
-                </div>
-              </a>
-            </li>
-            <li class="cards-list__item">
-              <a class="link-no-decor cards-list__link" href="">
-                <div class="cards-list__thumb">
-                  <picture>
-                    <source
-                      srcset="
-                        ./images/portfolio/project_boxes_lg.webp    1x,
-                        ./images/portfolio/project_boxes_lg@2x.webp 2x
-                      "
-                      media="(min-width: 1200px)"
-                      type="image/webp"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/project_boxes_lg.jpg    1x,
-                        ./images/portfolio/project_boxes_lg@2x.jpg 2x
-                      "
-                      media="(min-width: 1200px)"
-                      type="image/jpeg"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/project_boxes_md.webp    1x,
-                        ./images/portfolio/project_boxes_md@2x.webp 2x
-                      "
-                      media="(min-width: 768px)"
-                      type="image/webp"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/project_boxes_md.jpg    1x,
-                        ./images/portfolio/project_boxes_md@2x.jpg 2x
-                      "
-                      media="(min-width: 768px)"
-                      type="image/jpeg"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/project_boxes_sm.webp    1x,
-                        ./images/portfolio/project_boxes_sm@2x.webp 2x
-                      "
-                      media="(max-width: 767px)"
-                      type="image/webp"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/project_boxes_sm.jpg    1x,
-                        ./images/portfolio/project_boxes_sm@2x.jpg 2x
-                      "
-                      media="(max-width: 767px)"
-                      type="image/jpeg"
-                    />
-                    <img
-                      src="./images/portfolio/project_boxes_sm.jpg"
-                      alt="Пример работы проект Boxes"
-                      width="370"
-                      height="294"
-                    />
-                  </picture>
-                  <p class="cards-list__meta">
-                    Тут какой-то текст про данную работу &#128513;
-                  </p>
-                </div>
-                <div class="cards-list__wrapper">
-                  <h3 class="cards-list__subtitle">
-                    Проект <span lang="en">Boxes</span>
-                  </h3>
-                  <p class="cards-list__descriptions">Приложение</p>
-                </div>
-              </a>
-            </li>
-            <li class="cards-list__item">
-              <a class="link-no-decor cards-list__link" href="">
-                <div class="cards-list__thumb">
-                  <picture>
-                    <source
-                      srcset="
-                        ./images/portfolio/inspiration_no_borders_lg.webp    1x,
-                        ./images/portfolio/inspiration_no_borders_lg@2x.webp 2x
-                      "
-                      media="(min-width: 1200px)"
-                      type="image/webp"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/inspiration_no_borders_lg.jpg    1x,
-                        ./images/portfolio/inspiration_no_borders_lg@2x.jpg 2x
-                      "
-                      media="(min-width: 1200px)"
-                      type="image/jpeg"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/inspiration_no_borders_md.webp    1x,
-                        ./images/portfolio/inspiration_no_borders_md@2x.webp 2x
-                      "
-                      media="(min-width: 768px)"
-                      type="image/webp"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/inspiration_no_borders_md.jpg    1x,
-                        ./images/portfolio/inspiration_no_borders_md@2x.jpg 2x
-                      "
-                      media="(min-width: 768px)"
-                      type="image/jpeg"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/inspiration_no_borders_sm.webp    1x,
-                        ./images/portfolio/inspiration_no_borders_sm@2x.webp 2x
-                      "
-                      media="(max-width: 767px)"
-                      type="image/webp"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/inspiration_no_borders_sm@2x.jpg 2x
-                      "
-                      media="(max-width: 767px)"
-                      type="image/jpeg"
-                    />
-                    <img
-                      src="./images/portfolio/inspiration_no_borders_sm.jpg"
-                      alt="Пример работы Inspiration has no Borders"
-                      width="370"
-                      height="294"
-                    />
-                  </picture>
+                    <!-- Фильтр примеров работ -->
+                    <ul class="list-no-marker list-filter">
+                        <li class="list-filter__item">
+                            <button
+                                onclick="filter('all')"
+                                class="list-filter__button"
+                                type="button"
+                            >
+                                Все
+                            </button>
+                        </li>
+                        <li class="list-filter__item">
+                            <button
+                                onclick="filter('web')"
+                                class="list-filter__button"
+                                type="button"
+                            >
+                                Веб-сайты
+                            </button>
+                        </li>
+                        <li class="list-filter__item">
+                            <button
+                                onclick="filter('app')"
+                                class="list-filter__button"
+                                type="button"
+                            >
+                                Приложения
+                            </button>
+                        </li>
+                        <li class="list-filter__item">
+                            <button
+                                onclick="filter('design')"
+                                class="list-filter__button"
+                                type="button"
+                            >
+                                Дизайн
+                            </button>
+                        </li>
+                        <li class="list-filter__item">
+                            <button
+                                onclick="filter('marketing')"
+                                class="list-filter__button"
+                                type="button"
+                            >
+                                Маркетинг
+                            </button>
+                        </li>
+                    </ul>
+                    <!-- Список примеров работ -->
+                    <ul class="list-no-marker cards-list" id="works-list">
+                        <li class="cards-list__item" data-category="web">
+                            <a class="link-no-decor cards-list__link" href="">
+                                <div class="cards-list__thumb">
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/tehnokryak_lg.webp    1x,
+                                                ./images/portfolio/tehnokryak_lg@2x.webp 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/tehnokryak_lg.jpg    1x,
+                                                ./images/portfolio/tehnokryak_lg@2x.jpg 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                            type="image/jpeg"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/tehnokryak_md.webp    1x,
+                                                ./images/portfolio/tehnokryak_md@2x.webp 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/tehnokryak_md.jpg    1x,
+                                                ./images/portfolio/tehnokryak_md@2x.jpg 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                            type="image/jpeg"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/tehnokryak_sm.webp    1x,
+                                                ./images/portfolio/tehnokryak_sm@2x.webp 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/tehnokryak_sm@2x.jpg 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                            type="image/jpeg"
+                                        />
+                                        <img
+                                            src="./images/portfolio/tehnokryak_sm.jpg"
+                                            alt="Пример работы Технокряк"
+                                            width="370"
+                                            height="294"
+                                        />
+                                    </picture>
+                                    <p class="cards-list__meta">
+                                        Ресурс предлагает комплексные
+                                        предложения с разным уровнем функционала
+                                        и сервисов. Все это позволит посетителю
+                                        получить исчерпывающие сведения о
+                                        компании или частном лице.
+                                    </p>
+                                </div>
+                                <div class="cards-list__wrapper">
+                                    <h3 class="cards-list__subtitle">
+                                        Технокряк
+                                    </h3>
+                                    <p class="cards-list__descriptions">
+                                        Веб-сайт
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="cards-list__item" data-category="design">
+                            <a class="link-no-decor cards-list__link" href="">
+                                <div class="cards-list__thumb">
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/new_orlean_lg.webp    1x,
+                                                ./images/portfolio/new_orlean_lg@2x.webp 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/new_orlean_lg.jpg    1x,
+                                                ./images/portfolio/new_orlean_lg@2x.jpg 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                            type="image/jpeg"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/new_orlean_md.webp    1x,
+                                                ./images/portfolio/new_orlean_md@2x.webp 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/new_orlean_md.jpg    1x,
+                                                ./images/portfolio/new_orlean_md@2x.jpg 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                            type="image/jpeg"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/new_orlean_sm.webp    1x,
+                                                ./images/portfolio/new_orlean_sm@2x.webp 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/new_orlean_sm@2x.jpg 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                            type="image/jpeg"
+                                        />
+                                        <img
+                                            src="./images/portfolio/new_orlean_sm.jpg"
+                                            alt="Пример работы постер New Orlean vs Golden Star"
+                                            width="370"
+                                            height="294"
+                                        />
+                                    </picture>
+                                    <p class="cards-list__meta">
+                                        Тут какой-то текст про данную работу
+                                        &#128513;
+                                    </p>
+                                </div>
+                                <div class="cards-list__wrapper">
+                                    <h3 class="cards-list__subtitle">
+                                        Постер New Orlean vs Golden Star
+                                    </h3>
+                                    <p class="cards-list__descriptions">
+                                        Дизайн
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="cards-list__item" data-category="app">
+                            <a class="link-no-decor cards-list__link" href="">
+                                <div class="cards-list__thumb">
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/seafood_lg.webp    1x,
+                                                ./images/portfolio/seafood_lg@2x.webp 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/seafood_lg.jpg    1x,
+                                                ./images/portfolio/seafood_lg@2x.jpg 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                            type="image/jpeg"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/seafood_md.webp    1x,
+                                                ./images/portfolio/seafood_md@2x.webp 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/seafood_md.jpg    1x,
+                                                ./images/portfolio/seafood_md@2x.jpg 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                            type="image/jpeg"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/seafood_sm.webp    1x,
+                                                ./images/portfolio/seafood_sm@2x.webp 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/seafood_sm@2x.jpg 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                            type="image/jpeg"
+                                        />
+                                        <img
+                                            src="./images/portfolio/seafood_sm.jpg"
+                                            alt="Пример работы ресторан Seafood"
+                                            width="370"
+                                            height="294"
+                                        />
+                                    </picture>
+                                    <p class="cards-list__meta">
+                                        Тут какой-то текст про данную работу
+                                        &#128513;
+                                    </p>
+                                </div>
+                                <div class="cards-list__wrapper">
+                                    <h3 class="cards-list__subtitle">
+                                        Ресторан <span lang="en">Seafood</span>
+                                    </h3>
+                                    <p class="cards-list__descriptions">
+                                        Приложение
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="cards-list__item" data-category="marketing">
+                            <a class="link-no-decor cards-list__link" href="">
+                                <div class="cards-list__thumb">
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/project_prime_lg.webp    1x,
+                                                ./images/portfolio/project_prime_lg@2x.webp 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/project_prime_lg.jpg    1x,
+                                                ./images/portfolio/project_prime_lg@2x.jpg 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                            type="image/jpeg"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/project_prime_md.webp    1x,
+                                                ./images/portfolio/project_prime_md@2x.webp 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/project_prime_md.jpg    1x,
+                                                ./images/portfolio/project_prime_md@2x.jpg 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                            type="image/jpeg"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/project_prime_sm.webp    1x,
+                                                ./images/portfolio/project_prime_sm@2x.webp 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/project_prime_sm@2x.jpg 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                            type="image/jpeg"
+                                        />
+                                        <img
+                                            src="./images/portfolio/project_prime_sm.jpg"
+                                            alt="Пример работы проект Prime"
+                                            width="370"
+                                            height="294"
+                                        />
+                                    </picture>
+                                    <p class="cards-list__meta">
+                                        Тут какой-то текст про данную работу
+                                        &#128513;
+                                    </p>
+                                </div>
+                                <div class="cards-list__wrapper">
+                                    <h3 class="cards-list__subtitle">
+                                        Проект <span lang="en">Prime</span>
+                                    </h3>
+                                    <p class="cards-list__descriptions">
+                                        Маркетинг
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="cards-list__item" data-category="app">
+                            <a class="link-no-decor cards-list__link" href="">
+                                <div class="cards-list__thumb">
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/project_boxes_lg.webp    1x,
+                                                ./images/portfolio/project_boxes_lg@2x.webp 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/project_boxes_lg.jpg    1x,
+                                                ./images/portfolio/project_boxes_lg@2x.jpg 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                            type="image/jpeg"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/project_boxes_md.webp    1x,
+                                                ./images/portfolio/project_boxes_md@2x.webp 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/project_boxes_md.jpg    1x,
+                                                ./images/portfolio/project_boxes_md@2x.jpg 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                            type="image/jpeg"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/project_boxes_sm.webp    1x,
+                                                ./images/portfolio/project_boxes_sm@2x.webp 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/project_boxes_sm.jpg    1x,
+                                                ./images/portfolio/project_boxes_sm@2x.jpg 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                            type="image/jpeg"
+                                        />
+                                        <img
+                                            src="./images/portfolio/project_boxes_sm.jpg"
+                                            alt="Пример работы проект Boxes"
+                                            width="370"
+                                            height="294"
+                                        />
+                                    </picture>
+                                    <p class="cards-list__meta">
+                                        Тут какой-то текст про данную работу
+                                        &#128513;
+                                    </p>
+                                </div>
+                                <div class="cards-list__wrapper">
+                                    <h3 class="cards-list__subtitle">
+                                        Проект <span lang="en">Boxes</span>
+                                    </h3>
+                                    <p class="cards-list__descriptions">
+                                        Приложение
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="cards-list__item" data-category="web">
+                            <a class="link-no-decor cards-list__link" href="">
+                                <div class="cards-list__thumb">
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/inspiration_no_borders_lg.webp    1x,
+                                                ./images/portfolio/inspiration_no_borders_lg@2x.webp 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/inspiration_no_borders_lg.jpg    1x,
+                                                ./images/portfolio/inspiration_no_borders_lg@2x.jpg 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                            type="image/jpeg"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/inspiration_no_borders_md.webp    1x,
+                                                ./images/portfolio/inspiration_no_borders_md@2x.webp 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/inspiration_no_borders_md.jpg    1x,
+                                                ./images/portfolio/inspiration_no_borders_md@2x.jpg 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                            type="image/jpeg"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/inspiration_no_borders_sm.webp    1x,
+                                                ./images/portfolio/inspiration_no_borders_sm@2x.webp 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/inspiration_no_borders_sm@2x.jpg 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                            type="image/jpeg"
+                                        />
+                                        <img
+                                            src="./images/portfolio/inspiration_no_borders_sm.jpg"
+                                            alt="Пример работы Inspiration has no Borders"
+                                            width="370"
+                                            height="294"
+                                        />
+                                    </picture>
 
-                  <p class="cards-list__meta">
-                    Тут какой-то текст про данную работу &#128513;
-                  </p>
-                </div>
-                <div class="cards-list__wrapper">
-                  <h3 class="cards-list__subtitle" lang="en">
-                    Inspiration has no Borders
-                  </h3>
-                  <p class="cards-list__descriptions">Веб-сайт</p>
-                </div>
-              </a>
-            </li>
-            <li class="cards-list__item">
-              <a class="link-no-decor cards-list__link" href="">
-                <div class="cards-list__thumb">
-                  <picture>
-                    <source
-                      srcset="
-                        ./images/portfolio/limited_edition_lg.webp    1x,
-                        ./images/portfolio/limited_edition_lg@2x.webp 2x
-                      "
-                      media="(min-width: 1200px)"
-                      type="image/webp"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/limited_edition_lg.jpg    1x,
-                        ./images/portfolio/limited_edition_lg@2x.jpg 2x
-                      "
-                      media="(min-width: 1200px)"
-                      type="image/jpeg"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/limited_edition_md.webp    1x,
-                        ./images/portfolio/limited_edition_md@2x.webp 2x
-                      "
-                      media="(min-width: 768px)"
-                      type="image/webp"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/limited_edition_md.jpg    1x,
-                        ./images/portfolio/limited_edition_md@2x.jpg 2x
-                      "
-                      media="(min-width: 768px)"
-                      type="image/jpeg"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/limited_edition_sm.webp    1x,
-                        ./images/portfolio/limited_edition_sm@2x.webp 2x
-                      "
-                      media="(max-width: 767px)"
-                      type="image/webp"
-                    />
-                    <source
-                      srcset="./images/portfolio/limited_edition_sm@2x.jpg 2x"
-                      media="(max-width: 767px)"
-                      type="image/jpeg"
-                    />
-                    <img
-                      src="./images/portfolio/limited_edition_sm.jpg"
-                      alt="Пример работы издание Limited Edition"
-                      width="370"
-                      height="294"
-                    />
-                  </picture>
+                                    <p class="cards-list__meta">
+                                        Тут какой-то текст про данную работу
+                                        &#128513;
+                                    </p>
+                                </div>
+                                <div class="cards-list__wrapper">
+                                    <h3 class="cards-list__subtitle" lang="en">
+                                        Inspiration has no Borders
+                                    </h3>
+                                    <p class="cards-list__descriptions">
+                                        Веб-сайт
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="cards-list__item" data-category="design">
+                            <a class="link-no-decor cards-list__link" href="">
+                                <div class="cards-list__thumb">
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/limited_edition_lg.webp    1x,
+                                                ./images/portfolio/limited_edition_lg@2x.webp 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/limited_edition_lg.jpg    1x,
+                                                ./images/portfolio/limited_edition_lg@2x.jpg 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                            type="image/jpeg"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/limited_edition_md.webp    1x,
+                                                ./images/portfolio/limited_edition_md@2x.webp 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/limited_edition_md.jpg    1x,
+                                                ./images/portfolio/limited_edition_md@2x.jpg 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                            type="image/jpeg"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/limited_edition_sm.webp    1x,
+                                                ./images/portfolio/limited_edition_sm@2x.webp 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/limited_edition_sm@2x.jpg 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                            type="image/jpeg"
+                                        />
+                                        <img
+                                            src="./images/portfolio/limited_edition_sm.jpg"
+                                            alt="Пример работы издание Limited Edition"
+                                            width="370"
+                                            height="294"
+                                        />
+                                    </picture>
 
-                  <p class="cards-list__meta">
-                    Тут какой-то текст про данную работу &#128513;
-                  </p>
-                </div>
-                <div class="cards-list__wrapper">
-                  <h3 class="cards-list__subtitle">
-                    Издание <span lang="en">Limited Edition</span>
-                  </h3>
-                  <p class="cards-list__descriptions">Дизайн</p>
-                </div>
-              </a>
-            </li>
-            <li class="cards-list__item">
-              <a class="link-no-decor cards-list__link" href="">
-                <div class="cards-list__thumb">
-                  <picture>
-                    <source
-                      srcset="
-                        ./images/portfolio/project_lab_lg.webp    1x,
-                        ./images/portfolio/project_lab_lg@2x.webp 2x
-                      "
-                      media="(min-width: 1200px)"
-                      type="image/webp"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/project_lab_lg.jpg    1x,
-                        ./images/portfolio/project_lab_lg@2x.jpg 2x
-                      "
-                      media="(min-width: 1200px)"
-                      type="image/jpeg"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/project_lab_md.webp    1x,
-                        ./images/portfolio/project_lab_md@2x.webp 2x
-                      "
-                      media="(min-width: 768px)"
-                      type="image/webp"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/project_lab_sm.webp    1x,
-                        ./images/portfolio/project_lab_sm@2x.webp 2x
-                      "
-                      media="(max-width: 767px)"
-                      type="image/webp"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/project_lab_sm.webp    1x,
-                        ./images/portfolio/project_lab_sm@2x.webp 2x
-                      "
-                      media="(max-width: 767px)"
-                      type="image/webp"
-                    />
-                    <source
-                      srcset="./images/portfolio/project_lab_sm@2x.jpg 2x"
-                      media="(max-width: 767px)"
-                      type="image/jpeg"
-                    />
-                    <img
-                      src="./images/portfolio/project_lab_sm.jpg"
-                      alt="Пример работы проект LAB"
-                      width="370"
-                      height="294"
-                    />
-                  </picture>
+                                    <p class="cards-list__meta">
+                                        Тут какой-то текст про данную работу
+                                        &#128513;
+                                    </p>
+                                </div>
+                                <div class="cards-list__wrapper">
+                                    <h3 class="cards-list__subtitle">
+                                        Издание
+                                        <span lang="en">Limited Edition</span>
+                                    </h3>
+                                    <p class="cards-list__descriptions">
+                                        Дизайн
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="cards-list__item" data-category="marketing">
+                            <a class="link-no-decor cards-list__link" href="">
+                                <div class="cards-list__thumb">
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/project_lab_lg.webp    1x,
+                                                ./images/portfolio/project_lab_lg@2x.webp 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/project_lab_lg.jpg    1x,
+                                                ./images/portfolio/project_lab_lg@2x.jpg 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                            type="image/jpeg"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/project_lab_md.webp    1x,
+                                                ./images/portfolio/project_lab_md@2x.webp 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/project_lab_sm.webp    1x,
+                                                ./images/portfolio/project_lab_sm@2x.webp 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/project_lab_sm.webp    1x,
+                                                ./images/portfolio/project_lab_sm@2x.webp 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/project_lab_sm@2x.jpg 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                            type="image/jpeg"
+                                        />
+                                        <img
+                                            src="./images/portfolio/project_lab_sm.jpg"
+                                            alt="Пример работы проект LAB"
+                                            width="370"
+                                            height="294"
+                                        />
+                                    </picture>
 
-                  <p class="cards-list__meta">
-                    Тут какой-то текст про данную работу &#128513;
-                  </p>
+                                    <p class="cards-list__meta">
+                                        Тут какой-то текст про данную работу
+                                        &#128513;
+                                    </p>
+                                </div>
+                                <div class="cards-list__wrapper">
+                                    <h3 class="cards-list__subtitle">
+                                        Проект <span lang="en">LAB</span>
+                                    </h3>
+                                    <p class="cards-list__descriptions">
+                                        Маркетинг
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="cards-list__item" data-category="app">
+                            <a class="link-no-decor cards-list__link" href="">
+                                <div class="cards-list__thumb">
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/growing_business_lg.webp    1x,
+                                                ./images/portfolio/growing_business_lg@2x.webp 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/growing_business_lg.jpg    1x,
+                                                ./images/portfolio/growing_business_lg@2x.jpg 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                            type="image/jpeg"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/growing_business_md.webp    1x,
+                                                ./images/portfolio/growing_business_md@2x.webp 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/growing_business_md.jpg    1x,
+                                                ./images/portfolio/growing_business_md@2x.jpg 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                            type="image/jpeg"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/growing_business_sm.webp    1x,
+                                                ./images/portfolio/growing_business_sm@2x.webp 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/growing_business_sm@2x.jpg 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                            type="image/jpeg"
+                                        />
+                                        <img
+                                            src="./images/portfolio/growing_business_sm.jpg"
+                                            alt="Пример работы Growing Business"
+                                            width="370"
+                                            height="294"
+                                        />
+                                    </picture>
+                                    <p class="cards-list__meta">
+                                        Тут какой-то текст про данную работу
+                                        &#128513;
+                                    </p>
+                                </div>
+                                <div class="cards-list__wrapper">
+                                    <h3 class="cards-list__subtitle" lang="en">
+                                        Growing Business
+                                    </h3>
+                                    <p class="cards-list__descriptions">
+                                        Приложение
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="cards-list__wrapper">
-                  <h3 class="cards-list__subtitle">
-                    Проект <span lang="en">LAB</span>
-                  </h3>
-                  <p class="cards-list__descriptions">Маркетинг</p>
+            </section>
+        </main>
+        <!-- Подвал сайта -->
+        <footer class="footer">
+            <div class="container footer__container">
+                <div class="footer__first-line">
+                    <!-- Левая часть футера -->
+                    <div class="footer__wrapper">
+                        <a class="logo footer__logo" href="./index.html"
+                            ><span class="logo__aсcent">Web</span>Studio</a
+                        >
+                        <address class="footer__address">
+                            г. Киев, пр-т Леси Украинки, 26
+                        </address>
+                        <ul class="list-no-marker footer__list">
+                            <li class="footer__item">
+                                <a
+                                    class="link-no-decor footer__link"
+                                    href="mailto:info@example.com"
+                                    >info@example.com</a
+                                >
+                            </li>
+                            <li class="footer__item">
+                                <a
+                                    class="link-no-decor footer__link"
+                                    href="tel:+380991111111"
+                                    >+38 099 111 11 11</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Центр футера (соцсети) -->
+                    <div class="footer__wrapper-socials">
+                        <p class="footer__title">присоединяйтесь</p>
+                        <ul class="list-no-marker socials-list">
+                            <li class="socials-list__item">
+                                <a
+                                    class="link-no-decor socials-list__link socials-list__link--darck-bg"
+                                    href=""
+                                    aria-label="Instagram"
+                                >
+                                    <svg
+                                        class="socials-list__icon socials-list__icon--darck-bg"
+                                    >
+                                        <use
+                                            href="./images/svg/sprite.svg#icon-instagram"
+                                        ></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials-list__item">
+                                <a
+                                    class="link-no-decor socials-list__link socials-list__link--darck-bg"
+                                    href=""
+                                    aria-label="Twitter"
+                                >
+                                    <svg
+                                        class="socials-list__icon socials-list__icon--darck-bg"
+                                    >
+                                        <use
+                                            href="./images/svg/sprite.svg#icon-twitter"
+                                        ></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials-list__item">
+                                <a
+                                    class="link-no-decor socials-list__link socials-list__link--darck-bg"
+                                    href=""
+                                    aria-label="Facebook"
+                                >
+                                    <svg
+                                        class="socials-list__icon socials-list__icon--darck-bg"
+                                    >
+                                        <use
+                                            href="./images/svg/sprite.svg#icon-facebook"
+                                        ></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials-list__item">
+                                <a
+                                    class="link-no-decor socials-list__link socials-list__link--darck-bg"
+                                    href=""
+                                    aria-label="Linkedin"
+                                >
+                                    <svg
+                                        class="socials-list__icon socials-list__icon--darck-bg"
+                                    >
+                                        <use
+                                            href="./images/svg/sprite.svg#icon-linkedin"
+                                        ></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-              </a>
-            </li>
-            <li class="cards-list__item">
-              <a class="link-no-decor cards-list__link" href="">
-                <div class="cards-list__thumb">
-                  <picture>
-                    <source
-                      srcset="
-                        ./images/portfolio/growing_business_lg.webp    1x,
-                        ./images/portfolio/growing_business_lg@2x.webp 2x
-                      "
-                      media="(min-width: 1200px)"
-                      type="image/webp"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/growing_business_lg.jpg    1x,
-                        ./images/portfolio/growing_business_lg@2x.jpg 2x
-                      "
-                      media="(min-width: 1200px)"
-                      type="image/jpeg"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/growing_business_md.webp    1x,
-                        ./images/portfolio/growing_business_md@2x.webp 2x
-                      "
-                      media="(min-width: 768px)"
-                      type="image/webp"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/growing_business_md.jpg    1x,
-                        ./images/portfolio/growing_business_md@2x.jpg 2x
-                      "
-                      media="(min-width: 768px)"
-                      type="image/jpeg"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/growing_business_sm.webp    1x,
-                        ./images/portfolio/growing_business_sm@2x.webp 2x
-                      "
-                      media="(max-width: 767px)"
-                      type="image/webp"
-                    />
-                    <source
-                      srcset="./images/portfolio/growing_business_sm@2x.jpg 2x"
-                      media="(max-width: 767px)"
-                      type="image/jpeg"
-                    />
-                    <img
-                      src="./images/portfolio/growing_business_sm.jpg"
-                      alt="Пример работы Growing Business"
-                      width="370"
-                      height="294"
-                    />
-                  </picture>
-                  <p class="cards-list__meta">
-                    Тут какой-то текст про данную работу &#128513;
-                  </p>
-                </div>
-                <div class="cards-list__wrapper">
-                  <h3 class="cards-list__subtitle" lang="en">
-                    Growing Business
-                  </h3>
-                  <p class="cards-list__descriptions">Приложение</p>
-                </div>
-              </a>
-            </li>
-          </ul>
+
+                <!-- Правая часть футера (форма) -->
+                <form class="form" name="subscribe">
+                    <label class="form__lable" for="email">
+                        Подпишитесь на рассылку</label
+                    >
+                    <div class="form__wrapper">
+                        <input
+                            class="form__input-mail"
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="E-mail"
+                        />
+                        <button class="button form__button" type="submit">
+                            <span class="form__button-text">Подписаться</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </footer>
+        <!-- Мобильное меню -->
+        <div class="mobile-menu" data-menu>
+            <div class="mobile-menu__wrapper-nav">
+                <nav class="mobile-nav">
+                    <ul class="list-no-marker mobile-nav__list">
+                        <li class="mobile-nav__item">
+                            <a
+                                class="link-no-decor mobile-nav__link"
+                                href="./index.html"
+                                >Студия</a
+                            >
+                        </li>
+                        <li class="mobile-nav__item">
+                            <a
+                                class="link-no-decor mobile-nav__link mobile-nav__link--curent"
+                                href="./portfolio.html"
+                                >Портфолио</a
+                            >
+                        </li>
+                        <li class="mobile-nav__item">
+                            <a class="link-no-decor mobile-nav__link" href=""
+                                >Контакты</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="mobile-menu__wrapper-bottom">
+                <ul class="list-no-marker mobile-menu__list">
+                    <li class="mobile-menu__item">
+                        <a
+                            class="link-no-decor mobile-menu__link"
+                            href="tel:+380961111111"
+                            >+38 096 111 11 11</a
+                        >
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a
+                            class="link-no-decor mobile-menu__link mobile-menu__link--grey"
+                            href="mailto:info@devstudio.com"
+                            >info@devstudio.com</a
+                        >
+                    </li>
+                </ul>
+                <ul class="list-no-marker mobile-cocials-list">
+                    <li class="mobile-cocials-list__item">
+                        <a
+                            class="link-no-decor mobile-cocials-list__link"
+                            href=""
+                            target="_blank"
+                            noopener
+                            noreferrer
+                            >Instagram</a
+                        >
+                    </li>
+                    <li class="mobile-cocials-list__item">
+                        <a
+                            class="link-no-decor mobile-cocials-list__link"
+                            href=""
+                            target="_blank"
+                            noopener
+                            noreferrer
+                            >Twitter</a
+                        >
+                    </li>
+                    <li class="mobile-cocials-list__item">
+                        <a
+                            class="link-no-decor mobile-cocials-list__link"
+                            href=""
+                            target="_blank"
+                            noopener
+                            noreferrer
+                            >Facebook</a
+                        >
+                    </li>
+                    <li class="mobile-cocials-list__item">
+                        <a
+                            class="link-no-decor mobile-cocials-list__link"
+                            href=""
+                            target="_blank"
+                            noopener
+                            noreferrer
+                            >LinkedIn</a
+                        >
+                    </li>
+                </ul>
+            </div>
         </div>
-      </section>
-    </main>
-    <!-- Подвал сайта -->
-    <footer class="footer">
-      <div class="container footer__container">
-        <div class="footer__first-line">
-          <!-- Левая часть футера -->
-          <div class="footer__wrapper">
-            <a class="logo footer__logo" href="./index.html"
-              ><span class="logo__aсcent">Web</span>Studio</a
-            >
-            <address class="footer__address">
-              г. Киев, пр-т Леси Украинки, 26
-            </address>
-            <ul class="list-no-marker footer__list">
-              <li class="footer__item">
-                <a
-                  class="link-no-decor footer__link"
-                  href="mailto:info@example.com"
-                  >info@example.com</a
-                >
-              </li>
-              <li class="footer__item">
-                <a class="link-no-decor footer__link" href="tel:+380991111111"
-                  >+38 099 111 11 11</a
-                >
-              </li>
-            </ul>
-          </div>
-          <!-- Центр футера (соцсети) -->
-          <div class="footer__wrapper-socials">
-            <p class="footer__title">присоединяйтесь</p>
-            <ul class="list-no-marker socials-list">
-              <li class="socials-list__item">
-                <a
-                  class="link-no-decor socials-list__link socials-list__link--darck-bg"
-                  href=""
-                  aria-label="Instagram"
-                >
-                  <svg class="socials-list__icon socials-list__icon--darck-bg">
-                    <use href="./images/svg/sprite.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="socials-list__item">
-                <a
-                  class="link-no-decor socials-list__link socials-list__link--darck-bg"
-                  href=""
-                  aria-label="Twitter"
-                >
-                  <svg class="socials-list__icon socials-list__icon--darck-bg">
-                    <use href="./images/svg/sprite.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="socials-list__item">
-                <a
-                  class="link-no-decor socials-list__link socials-list__link--darck-bg"
-                  href=""
-                  aria-label="Facebook"
-                >
-                  <svg class="socials-list__icon socials-list__icon--darck-bg">
-                    <use href="./images/svg/sprite.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="socials-list__item">
-                <a
-                  class="link-no-decor socials-list__link socials-list__link--darck-bg"
-                  href=""
-                  aria-label="Linkedin"
-                >
-                  <svg class="socials-list__icon socials-list__icon--darck-bg">
-                    <use href="./images/svg/sprite.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Правая часть футера (форма) -->
-        <form class="form" name="subscribe">
-          <label class="form__lable" for="email">
-            Подпишитесь на рассылку</label
-          >
-          <div class="form__wrapper">
-            <input
-              class="form__input-mail"
-              type="email"
-              name="email"
-              id="email"
-              placeholder="E-mail"
-            />
-            <button class="button form__button" type="submit">
-              <span class="form__button-text">Подписаться</span>
-            </button>
-          </div>
-        </form>
-      </div>
-    </footer>
-    <!-- Мобильное меню -->
-    <div class="mobile-menu" data-menu>
-      <div class="mobile-menu__wrapper-nav">
-        <nav class="mobile-nav">
-          <ul class="list-no-marker mobile-nav__list">
-            <li class="mobile-nav__item">
-              <a class="link-no-decor mobile-nav__link" href="./index.html"
-                >Студия</a
-              >
-            </li>
-            <li class="mobile-nav__item">
-              <a
-                class="link-no-decor mobile-nav__link mobile-nav__link--curent"
-                href="./portfolio.html"
-                >Портфолио</a
-              >
-            </li>
-            <li class="mobile-nav__item">
-              <a class="link-no-decor mobile-nav__link" href="">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div class="mobile-menu__wrapper-bottom">
-        <ul class="list-no-marker mobile-menu__list">
-          <li class="mobile-menu__item">
-            <a class="link-no-decor mobile-menu__link" href="tel:+380961111111"
-              >+38 096 111 11 11</a
-            >
-          </li>
-          <li class="mobile-menu__item">
-            <a
-              class="link-no-decor mobile-menu__link mobile-menu__link--grey"
-              href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-        </ul>
-        <ul class="list-no-marker mobile-cocials-list">
-          <li class="mobile-cocials-list__item">
-            <a
-              class="link-no-decor mobile-cocials-list__link"
-              href=""
-              target="_blank"
-              noopener
-              noreferrer
-              >Instagram</a
-            >
-          </li>
-          <li class="mobile-cocials-list__item">
-            <a
-              class="link-no-decor mobile-cocials-list__link"
-              href=""
-              target="_blank"
-              noopener
-              noreferrer
-              >Twitter</a
-            >
-          </li>
-          <li class="mobile-cocials-list__item">
-            <a
-              class="link-no-decor mobile-cocials-list__link"
-              href=""
-              target="_blank"
-              noopener
-              noreferrer
-              >Facebook</a
-            >
-          </li>
-          <li class="mobile-cocials-list__item">
-            <a
-              class="link-no-decor mobile-cocials-list__link"
-              href=""
-              target="_blank"
-              noopener
-              noreferrer
-              >LinkedIn</a
-            >
-          </li>
-        </ul>
-      </div>
-    </div>
-    <!-- Подключаю скрипт мобильной кнопки -->
-    <script src="./js/mobile-menu.js"></script>
-  </body>
+        <!-- Подключаю скрипт мобильной кнопки -->
+        <script src="./js/mobile-menu.js"></script>
+        <script src="./js/filter.js"></script>
+    </body>
 </html>
